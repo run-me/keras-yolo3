@@ -23,10 +23,10 @@ class YOLO(object):
     _defaults = {
         "model_path": 'model_data/yolo.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/coco_classes.txt',
+        "classes_path": '/media/breakthrough/plnarData/universe/github-runme/keras-yolo3/projects/cb/christmas_boxes_labels.txt',
         "score" : 0.3,
         "iou" : 0.45,
-        "model_image_size" : (416, 416),
+        "model_image_size" : (480, 480),
         "gpu_num" : 1,
     }
 
