@@ -17,6 +17,7 @@ from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 import os
 from keras.utils import multi_gpu_model
+import cv2
 
 class YOLO(object):
     _defaults = {
@@ -170,7 +171,6 @@ class YOLO(object):
         self.sess.close()
 
 def detect_video(yolo, video_path, output_path=""):
-    import cv2
     vid = cv2.VideoCapture(video_path)
     if not vid.isOpened():
         raise IOError("Couldn't open webcam or video")
