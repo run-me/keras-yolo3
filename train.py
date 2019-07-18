@@ -12,7 +12,6 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, ReduceLROnPlateau, Ear
 from yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from yolo3.utils import get_random_data
 
-
 def _main():
     annotation_path = 'train.txt'
     log_dir = 'logs/000/'
